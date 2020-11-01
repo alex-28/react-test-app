@@ -1,1 +1,1 @@
-# react-test-app
+# react-shop
