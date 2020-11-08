@@ -32,7 +32,7 @@ const _Menu: React.FC<RouteComponentProps> = (props) => {
 const Menu = withRouter(_Menu);
 
 const _Item: React.FC<RouteComponentProps<{ id: string }>> = (props) => {
-  return <div>{props.match.params.id} item</div>;
+  return <div>id-{props.match.params.id}-item</div>;
 };
 
 const Item = withRouter(_Item);
