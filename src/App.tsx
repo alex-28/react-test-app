@@ -13,7 +13,7 @@ const _Menu: React.FC<RouteComponentProps> = (props) => {
       to: '/about',
     },
     {
-      title: 'Items',
+      title: 'Items List',
       to: '/items',
     },
   ];
