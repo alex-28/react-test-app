@@ -10,7 +10,7 @@ export function App() {
   return (<div>
     <Link to={home}>home</Link>
     <Link to={about}>about</Link>
-    <Link to={'/items}>items</Link>
+    <Link to={'/items'}>items</Link>
   <Route exact path={home} component={() => <div>Home {home}</div>} />
     <Route exact path={about} component={() => <div>About {about}</div>} />
     <Route exact path='/items' component={() => <div>items</div>} />
