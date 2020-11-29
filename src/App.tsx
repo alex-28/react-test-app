@@ -115,7 +115,7 @@ export const App: React.FC = () => {
             const [news, setNews] = React.useState<INews[]>([]);
 
             React.useEffect(() => {
-              fetch('http://news-json.herokuapp.com/news')
+              fetch('https://news-json.herokuapp.com/news')
                 .then((res) => res.json())
                 .then((newsList) => setNews(newsList));
             }, []);
@@ -126,7 +126,7 @@ export const App: React.FC = () => {
               };
 
               new HttpProvider()
-                .post<INews>('http://news-json.herokuapp.com/news', item)
+                .post<INews>('https://news-json.herokuapp.com/news', item)
                 .then((res) => {
                   setNews([...news, res]);
                 });
@@ -145,7 +145,7 @@ export const App: React.FC = () => {
                   </Link>
                 ))}
                 <br />
-                <Button onClick={onAdd}>Add news</Button>
+                <Button onClick={onAdd}>Add news item</Button>
               </div>
             );
           }}
